@@ -1,5 +1,7 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" height="90" alt="Nest Logo" /></a>
+  <a href="https://www.typescriptlang.org/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/80px-Typescript_logo_2020.svg.png" height="90" alt="TS Logo" /></a>
+  <a href="https://www.postgresql.org/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/540px-Postgresql_elephant.svg.png" height="90" alt="Postgresql Logo" /></a>
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
@@ -43,6 +45,19 @@ $ yarn start:dev
 
 # production mode
 $ yarn start:prod
+```
+
+## Work with DB
+
+```bash
+# drop DB
+$ yarn db:drop 
+
+# migration generate
+$ yarn db:create nameMigration
+
+# apply migration file on DB
+$ yarn db:migrate
 ```
 
 ## Test
