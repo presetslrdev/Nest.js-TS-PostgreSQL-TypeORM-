@@ -18,7 +18,8 @@ export class UserEntity {
   @Column({ default: '' })
   image: string;
 
-  @Column()
+  // исключить пароль из ответа
+  @Column({ select: false })
   password: string;
 
   @BeforeInsert()
