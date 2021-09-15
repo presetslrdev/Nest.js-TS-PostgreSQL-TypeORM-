@@ -1,5 +1,10 @@
 {
   "watch": ["src"],
   "ext": "ts",
-  "exec": "cross-env IS_TS_NODE=true ts-node -r tsconfig-paths/register src/main.ts"
+  "exec": "cross-env IS_TS_NODE=true ts-node -r tsconfig-paths/register src/main.ts",
+  "events": {
+    "restart": "kill-port 3005",
+    "crash": "kill-port 3005"
+  },
+  "delay": "1000"
 }
