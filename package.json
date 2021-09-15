@@ -32,12 +32,14 @@
     "class-validator": "^0.13.1",
     "cross-env": "^7.0.3",
     "jsonwebtoken": "^8.5.1",
+    "kill-port": "^1.6.1",
     "module-alias": "^2.2.2",
     "nodemon": "^2.0.12",
     "pg": "^8.6.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
+    "slugify": "^1.6.0",
     "typeorm": "^0.2.34"
   },
   "devDependencies": {
